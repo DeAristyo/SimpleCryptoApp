@@ -16,6 +16,7 @@ extension NumberFormatter {
         return formatter
     }()
     
+    //MARK: - Format number with $ Currency
     static func abbreviatedCurrencyString(from number: NSNumber) -> String {
         let doubleValue = number.doubleValue
         return abbreviatedCurrencyString(from: doubleValue)
@@ -45,6 +46,8 @@ extension NumberFormatter {
         return "$ \(self.abbreviated.string(from: NSNumber(value: number))!)"
     }
     
+    
+    //MARK: - Format Number only
     static func abbreviatedString(from number: NSNumber) -> String {
         let doubleValue = number.doubleValue
         return abbreviatedCurrencyString(from: doubleValue)
