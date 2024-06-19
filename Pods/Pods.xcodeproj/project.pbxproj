@@ -251,7 +251,7 @@
 		A2ED3F5E31D8DCDA45419A09C7361262 /* Observable+Bind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74946085715C7B0A40268F4855C1F4DD /* Observable+Bind.swift */; };
 		A33F3D1BCB8DE7AFE70FC775D862E82F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
 		A35BC687BBFB07F918E02359CEC9246E /* Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC009880B8833AAE911E59555D9E319 /* Repeat.swift */; };
-		A4C9EB97F20B7C24E713C0050829D6E2 /* Wormholy-Wormholy in Resources */ = {isa = PBXBuildFile; fileRef = AA92ED38E716E03D3FC758C810953B95 /* Wormholy-Wormholy */; };
+		A4C9EB97F20B7C24E713C0050829D6E2 /* Wormholy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AA92ED38E716E03D3FC758C810953B95 /* Wormholy.bundle */; };
 		A523488C60BF961290D0B1ABB9ADACEC /* RequestCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3501F45399738C748C4E07AA26C3849F /* RequestCompression.swift */; };
 		A63E618214C11DFD86BEEB5D2DFD0355 /* WHCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B2CD17E31F991FA910C7F287DE6962 /* WHCollectionView.swift */; };
 		A75FDC0570C350466F195AB1316C876F /* RxPickerViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7B7C4C5D1FF76EF0AE7E7F1808273C /* RxPickerViewAdapter.swift */; };
@@ -569,7 +569,7 @@
 		23A6BDC0AD57EE000E95BF78FBFE6216 /* Debug.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debug.swift; path = RxSwift/Observables/Debug.swift; sourceTree = "<group>"; };
 		23B16C330610353068AE5EB0BA8849BE /* Pods-SimpleCryptoApp-SimpleCryptoAppUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleCryptoApp-SimpleCryptoAppUITests-Info.plist"; sourceTree = "<group>"; };
 		245DCF782E9A67BD357D92EE2792407C /* InfiniteSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InfiniteSequence.swift; path = Platform/DataStructures/InfiniteSequence.swift; sourceTree = "<group>"; };
-		2530BC414137FF7A53A0368B476547B9 /* Wormholy */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Wormholy; path = Wormholy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2530BC414137FF7A53A0368B476547B9 /* Wormholy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Wormholy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2677CD0C0551636075C85167CF293979 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = RxSwift/Observables/Error.swift; sourceTree = "<group>"; };
 		26B05999407F96157149D391F364C8B0 /* NSButton+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSButton+Rx.swift"; path = "RxCocoa/macOS/NSButton+Rx.swift"; sourceTree = "<group>"; };
 		26DC5CAC8B376DD3844833E1BB9582E2 /* Decode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decode.swift; path = RxSwift/Observables/Decode.swift; sourceTree = "<group>"; };
@@ -640,7 +640,7 @@
 		5B22CFB12AC8CF244D35B2CC70B56BDE /* RxTableViewDataSourcePrefetchingProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxTableViewDataSourcePrefetchingProxy.swift; path = RxCocoa/iOS/Proxies/RxTableViewDataSourcePrefetchingProxy.swift; sourceTree = "<group>"; };
 		5B69F8FEFED1629ABF94249CBEA6E788 /* RxCocoa-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RxCocoa-prefix.pch"; sourceTree = "<group>"; };
 		5C6052D6A57647FD9CC709E75E3EDF25 /* Cancelable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cancelable.swift; path = RxSwift/Cancelable.swift; sourceTree = "<group>"; };
-		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC009880B8833AAE911E59555D9E319 /* Repeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Repeat.swift; path = RxSwift/Observables/Repeat.swift; sourceTree = "<group>"; };
 		5DCC25CC7ECCC2597B16B5C45D0362C7 /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
 		5E36DD0C9E26041B42308BEB97B02ABF /* UIActivityIndicatorView+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIActivityIndicatorView+Rx.swift"; path = "RxCocoa/iOS/UIActivityIndicatorView+Rx.swift"; sourceTree = "<group>"; };
@@ -710,7 +710,7 @@
 		7E4F1CC5C081B27F2BE1B30C3D8958AB /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = "Sources/Support Files/Config.swift"; sourceTree = "<group>"; };
 		7E733645B38B69C4E9B67E389765736D /* RxCocoa-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RxCocoa-Info.plist"; sourceTree = "<group>"; };
 		7FFBD9094D773BA77F467187C740BBFE /* Infallible+Driver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Infallible+Driver.swift"; path = "RxCocoa/Traits/Driver/Infallible+Driver.swift"; sourceTree = "<group>"; };
-		809C5FAB588354C9BA37DC3EAB8CB45C /* RxSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RxSwift; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		809C5FAB588354C9BA37DC3EAB8CB45C /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B2CD17E31F991FA910C7F287DE6962 /* WHCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHCollectionView.swift; path = Sources/Subclasses/WHCollectionView.swift; sourceTree = "<group>"; };
 		8188E2F37113A2D6E966356412260C2D /* _RXObjCRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _RXObjCRuntime.h; path = RxCocoa/Runtime/include/_RXObjCRuntime.h; sourceTree = "<group>"; };
 		819583B3220B83432AA6110D9EF34A0C /* Wormholy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Wormholy-prefix.pch"; sourceTree = "<group>"; };
@@ -753,7 +753,7 @@
 		99CDC14B6D21DCE430D12CD2BCF6915F /* First.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = First.swift; path = RxSwift/Observables/First.swift; sourceTree = "<group>"; };
 		9A2AFD59271577E31CEAE605D4557861 /* PublishRelay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PublishRelay.swift; path = RxRelay/PublishRelay.swift; sourceTree = "<group>"; };
 		9A9251A1BF70DAAC97F7CE46A0CD24C2 /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
-		9ABD000F2A8D9BDCD19AAEF7A9C2FEA0 /* Pods-SimpleCryptoApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SimpleCryptoApp"; path = Pods_SimpleCryptoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ABD000F2A8D9BDCD19AAEF7A9C2FEA0 /* Pods_SimpleCryptoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleCryptoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD573D21D83E3B23E300ADF26B45F76 /* CombineLatest+Collection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CombineLatest+Collection.swift"; path = "RxSwift/Observables/CombineLatest+Collection.swift"; sourceTree = "<group>"; };
 		9B628DC05E1141AFD018E044A7D3CEA1 /* _RXDelegateProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _RXDelegateProxy.m; path = RxCocoa/Runtime/_RXDelegateProxy.m; sourceTree = "<group>"; };
 		9BA9772743533005FC6B95C2561B86A7 /* BodyDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BodyDetailViewController.swift; path = Sources/UI/BodyDetailViewController.swift; sourceTree = "<group>"; };
@@ -762,7 +762,7 @@
 		9D29EF83751AC786F69C16DC10AAE1EB /* WormholyMethodSwizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WormholyMethodSwizzling.m; path = Sources/Objc/WormholyMethodSwizzling.m; sourceTree = "<group>"; };
 		9D33E1A384F60A56647D57D9A5BEB1A6 /* SkipWhile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkipWhile.swift; path = RxSwift/Observables/SkipWhile.swift; sourceTree = "<group>"; };
 		9D8273BF0EF7C30DE316520C6D22AE74 /* Range.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Range.swift; path = RxSwift/Observables/Range.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DC54EFE343F62406E44480A850A2E7C /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
 		9E01E188168954DB27A7EB9D368BDAF2 /* AnyObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyObserver.swift; path = RxSwift/AnyObserver.swift; sourceTree = "<group>"; };
 		9E3F8A34A7E5062B7C9C2C98B4786C34 /* RxRelay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RxRelay.modulemap; sourceTree = "<group>"; };
@@ -787,7 +787,7 @@
 		A7EE0A998B357166E9B87C564161C11C /* SynchronizedOnType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynchronizedOnType.swift; path = RxSwift/Concurrency/SynchronizedOnType.swift; sourceTree = "<group>"; };
 		A8A85AC687147D25D869DFAF009383B5 /* RxSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RxSwift-Info.plist"; sourceTree = "<group>"; };
 		AA44330BCBB906B9374D3B68E8AEB6E8 /* Bag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bag.swift; path = Platform/DataStructures/Bag.swift; sourceTree = "<group>"; };
-		AA92ED38E716E03D3FC758C810953B95 /* Wormholy-Wormholy */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Wormholy-Wormholy"; path = Wormholy.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA92ED38E716E03D3FC758C810953B95 /* Wormholy.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Wormholy.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAAD1BBB7906648A9878520EFDD8569A /* RxTableViewReactiveArrayDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxTableViewReactiveArrayDataSource.swift; path = RxCocoa/iOS/DataSources/RxTableViewReactiveArrayDataSource.swift; sourceTree = "<group>"; };
 		AAEEE5D60152E884EBEB8E6E88AF2FF9 /* RxSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RxSwift-dummy.m"; sourceTree = "<group>"; };
 		AB3B1D5781E84AB4709E6AD7D60A0EEC /* Pods-SimpleCryptoAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SimpleCryptoAppTests-umbrella.h"; sourceTree = "<group>"; };
@@ -821,7 +821,7 @@
 		BB5EDC77F224955114DFDB0807280E1B /* Driver+Subscription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Driver+Subscription.swift"; path = "RxCocoa/Traits/Driver/Driver+Subscription.swift"; sourceTree = "<group>"; };
 		BBF14DCD99F0211A4A3C53B526785046 /* Pods-SimpleCryptoApp-SimpleCryptoAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleCryptoApp-SimpleCryptoAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		BC2A2E49994701A357EBDEB1A53D72B9 /* WHBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHBundle.swift; path = Sources/Subclasses/WHBundle.swift; sourceTree = "<group>"; };
-		BC432FD48A5932251F1CAFBC4BF74894 /* RxCocoa */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RxCocoa; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC432FD48A5932251F1CAFBC4BF74894 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD15CFA443623E1E3966A219DD8B116D /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = RxSwift/Errors.swift; sourceTree = "<group>"; };
 		BD635CC259FEC2FDA3A04CAD2EA4CAF3 /* Zip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zip.swift; path = RxSwift/Observables/Zip.swift; sourceTree = "<group>"; };
 		BD7EBF712B9C7523BEEA101539429868 /* Wormholy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Wormholy-dummy.m"; sourceTree = "<group>"; };
@@ -933,7 +933,7 @@
 		FCF8E8BD22D7980E9AA4709A23AAEB61 /* Pods-SimpleCryptoApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SimpleCryptoApp-umbrella.h"; sourceTree = "<group>"; };
 		FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		FDE796EE815E8BDF5B24748B23B5C576 /* BinaryDisposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryDisposable.swift; path = RxSwift/Disposables/BinaryDisposable.swift; sourceTree = "<group>"; };
-		FF8B264DFE802855D5D67E7CDDABFC3C /* RxRelay */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RxRelay; path = RxRelay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF8B264DFE802855D5D67E7CDDABFC3C /* RxRelay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxRelay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1194,7 +1194,6 @@
 				2EFBA4D8C3D3FC7172002450E39F02F1 /* Zip+Collection.swift */,
 				0508C3309DE4215F5B3A081EEFB49E5E /* Support Files */,
 			);
-			name = RxSwift;
 			path = RxSwift;
 			sourceTree = "<group>";
 		};
@@ -1241,7 +1240,6 @@
 				BB081332533F80E1334438D5FC36B7FA /* Resources */,
 				1BD233AE3FF13B5906308CE808CD40B2 /* Support Files */,
 			);
-			name = Wormholy;
 			path = Wormholy;
 			sourceTree = "<group>";
 		};
@@ -1386,7 +1384,6 @@
 				20264B0A99770ABFA8D41C17B26B0037 /* WKWebView+Rx.swift */,
 				D1C7926957D5E03909F39F790E571D4F /* Support Files */,
 			);
-			name = RxCocoa;
 			path = RxCocoa;
 			sourceTree = "<group>";
 		};
@@ -1415,7 +1412,6 @@
 				D74242C5DC3DC13A9024DE38AA3CB2F3 /* Utils.swift */,
 				37D67A8DEFDC5D66AC6591204DAF83F8 /* Support Files */,
 			);
-			name = RxRelay;
 			path = RxRelay;
 			sourceTree = "<group>";
 		};
@@ -1485,7 +1481,6 @@
 				F8B31BEA241136DECF3CEC7304B61782 /* Validation.swift */,
 				975C4CA18BA0DFF09120C78ACBB4C51D /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -1590,15 +1585,15 @@
 		E906F46B8BA6781F466347A59F86F2FA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
-				9ABD000F2A8D9BDCD19AAEF7A9C2FEA0 /* Pods-SimpleCryptoApp */,
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
+				9ABD000F2A8D9BDCD19AAEF7A9C2FEA0 /* Pods_SimpleCryptoApp.framework */,
 				7C3E80AA559ECAF00246278B38040D97 /* Pods-SimpleCryptoApp-SimpleCryptoAppUITests */,
 				44FFF93DC8AFD24F507F29780646303E /* Pods-SimpleCryptoAppTests */,
-				BC432FD48A5932251F1CAFBC4BF74894 /* RxCocoa */,
-				FF8B264DFE802855D5D67E7CDDABFC3C /* RxRelay */,
-				809C5FAB588354C9BA37DC3EAB8CB45C /* RxSwift */,
-				2530BC414137FF7A53A0368B476547B9 /* Wormholy */,
-				AA92ED38E716E03D3FC758C810953B95 /* Wormholy-Wormholy */,
+				BC432FD48A5932251F1CAFBC4BF74894 /* RxCocoa.framework */,
+				FF8B264DFE802855D5D67E7CDDABFC3C /* RxRelay.framework */,
+				809C5FAB588354C9BA37DC3EAB8CB45C /* RxSwift.framework */,
+				2530BC414137FF7A53A0368B476547B9 /* Wormholy.framework */,
+				AA92ED38E716E03D3FC758C810953B95 /* Wormholy.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1710,7 +1705,7 @@
 			);
 			name = Wormholy;
 			productName = Wormholy;
-			productReference = 2530BC414137FF7A53A0368B476547B9 /* Wormholy */;
+			productReference = 2530BC414137FF7A53A0368B476547B9 /* Wormholy.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4622BFEF3DC16E8BD15EEFC30D4D0084 /* RxRelay */ = {
@@ -1729,7 +1724,7 @@
 			);
 			name = RxRelay;
 			productName = RxRelay;
-			productReference = FF8B264DFE802855D5D67E7CDDABFC3C /* RxRelay */;
+			productReference = FF8B264DFE802855D5D67E7CDDABFC3C /* RxRelay.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		56B8A28E991DF8B18E60EFBAA882F447 /* Pods-SimpleCryptoApp-SimpleCryptoAppUITests */ = {
@@ -1775,7 +1770,7 @@
 			);
 			name = "Pods-SimpleCryptoApp";
 			productName = Pods_SimpleCryptoApp;
-			productReference = 9ABD000F2A8D9BDCD19AAEF7A9C2FEA0 /* Pods-SimpleCryptoApp */;
+			productReference = 9ABD000F2A8D9BDCD19AAEF7A9C2FEA0 /* Pods_SimpleCryptoApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		70DCD77C2F41320DA6AFC3CA9568FE4E /* Pods-SimpleCryptoAppTests */ = {
@@ -1814,7 +1809,7 @@
 			);
 			name = RxCocoa;
 			productName = RxCocoa;
-			productReference = BC432FD48A5932251F1CAFBC4BF74894 /* RxCocoa */;
+			productReference = BC432FD48A5932251F1CAFBC4BF74894 /* RxCocoa.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		93CEC7FFB57A497DE49471C5D9517C13 /* Wormholy-Wormholy */ = {
@@ -1831,7 +1826,7 @@
 			);
 			name = "Wormholy-Wormholy";
 			productName = Wormholy;
-			productReference = AA92ED38E716E03D3FC758C810953B95 /* Wormholy-Wormholy */;
+			productReference = AA92ED38E716E03D3FC758C810953B95 /* Wormholy.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		EA9EA43B3B503823EE36C60D9C8A865F /* RxSwift */ = {
@@ -1849,7 +1844,7 @@
 			);
 			name = RxSwift;
 			productName = RxSwift;
-			productReference = 809C5FAB588354C9BA37DC3EAB8CB45C /* RxSwift */;
+			productReference = 809C5FAB588354C9BA37DC3EAB8CB45C /* RxSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
@@ -1867,7 +1862,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */;
+			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1950,7 +1945,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4C9EB97F20B7C24E713C0050829D6E2 /* Wormholy-Wormholy in Resources */,
+				A4C9EB97F20B7C24E713C0050829D6E2 /* Wormholy.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

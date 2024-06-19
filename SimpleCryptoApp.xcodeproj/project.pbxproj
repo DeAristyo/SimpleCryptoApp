@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		0615D47B96BD96AA3980DA9D /* Pods_SimpleCryptoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA9595FC39DDDD2572ACEA3 /* Pods_SimpleCryptoAppTests.framework */; };
 		64477605E3B276481DB65E2F /* Pods_SimpleCryptoApp_SimpleCryptoAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1934F97F678F03E77670E885 /* Pods_SimpleCryptoApp_SimpleCryptoAppUITests.framework */; };
+		A5B40E4A2C205A0400D027F5 /* CoinListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B40E492C205A0400D027F5 /* CoinListCell.swift */; };
 		A5CC21D32C1F1C3300BC1B30 /* NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CC21D22C1F1C3300BC1B30 /* NumberFormatter.swift */; };
+		A5CC21D52C1F605200BC1B30 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CC21D42C1F605200BC1B30 /* CoinData.swift */; };
 		A5DB6B922C1E1A7C0066B528 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB6B912C1E1A7C0066B528 /* AppDelegate.swift */; };
 		A5DB6B942C1E1A7C0066B528 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB6B932C1E1A7C0066B528 /* SceneDelegate.swift */; };
 		A5DB6B962C1E1A7C0066B528 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB6B952C1E1A7C0066B528 /* HomeViewController.swift */; };
@@ -54,7 +56,9 @@
 		33D3728D84D2607ED9BE853A /* Pods-SimpleCryptoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleCryptoAppTests.release.xcconfig"; path = "Target Support Files/Pods-SimpleCryptoAppTests/Pods-SimpleCryptoAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		6FA9595FC39DDDD2572ACEA3 /* Pods_SimpleCryptoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleCryptoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C7239038F5AC88AB0DEB44 /* Pods-SimpleCryptoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleCryptoAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleCryptoAppTests/Pods-SimpleCryptoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A5B40E492C205A0400D027F5 /* CoinListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListCell.swift; sourceTree = "<group>"; };
 		A5CC21D22C1F1C3300BC1B30 /* NumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatter.swift; sourceTree = "<group>"; };
+		A5CC21D42C1F605200BC1B30 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
 		A5DB6B8E2C1E1A7C0066B528 /* SimpleCryptoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCryptoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5DB6B912C1E1A7C0066B528 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5DB6B932C1E1A7C0066B528 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -191,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				A5DB6BC62C1E1C4F0066B528 /* CryptoData.swift */,
+				A5CC21D42C1F605200BC1B30 /* CoinData.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -231,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				A5DB6BD32C1E3E450066B528 /* StackViews */,
+				A5B40E492C205A0400D027F5 /* CoinListCell.swift */,
 			);
 			path = ReusableViews;
 			sourceTree = "<group>";
@@ -501,6 +507,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5CC21D52C1F605200BC1B30 /* CoinData.swift in Sources */,
 				A5DB6BD52C1E3E580066B528 /* HStack.swift in Sources */,
 				A5CC21D32C1F1C3300BC1B30 /* NumberFormatter.swift in Sources */,
 				A5DB6BCD2C1E1D7A0066B528 /* HomePresenter.swift in Sources */,
@@ -508,6 +515,7 @@
 				A5DB6BD72C1E3F5E0066B528 /* VStack.swift in Sources */,
 				A5DB6B922C1E1A7C0066B528 /* AppDelegate.swift in Sources */,
 				A5DB6BC42C1E1C140066B528 /* NetworkService.swift in Sources */,
+				A5B40E4A2C205A0400D027F5 /* CoinListCell.swift in Sources */,
 				A5DB6BCA2C1E1D550066B528 /* HomeInteractor.swift in Sources */,
 				A5DB6BD12C1E1E820066B528 /* HomeRouter.swift in Sources */,
 				A5DB6BDA2C1F0F740066B528 /* UIColorExtension.swift in Sources */,

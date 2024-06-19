@@ -22,11 +22,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.makeKeyAndVisible()
         
         Wormholy.load()
+        
     }
     
     private func configureGlobalAppearance() {
         UILabel.appearance().textColor = .appTextColor
-        UIView.appearance().backgroundColor = .appBackgroundColor
+        UIView.appearance().backgroundColor = .secondary
         
         window?.overrideUserInterfaceStyle = .dark
     }

@@ -32,4 +32,19 @@ class CryptoAPI {
             }
         }
     }
+    
+    func fetchCoinData() -> Observable<[Coin]> {
+            return Observable.create { observer in
+                AF.request("https://api.coinlore.net/api/tickers/?start=100&limit=100")
+                    .responseDecodable(of: CoinResponse.self) { response in
+                        switch response.result {
+                        case .success(let data):
+                            observer.onNext(data.data)
+                        case .failure(let error):
+                            observer.onError(error)
+                        }
+                    }
+                return Disposables.create()
+            }
+        }
 }

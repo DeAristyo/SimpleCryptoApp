@@ -12,11 +12,20 @@ import RxCocoa
 protocol HomeViewProtocol: AnyObject {
     func showGlobalData(_ data: CryptoGlobalData)
     func showError(_ message: String)
+    func showCoinData(_ coins: [Coin])
 }
 
 class HomeViewController: UIViewController, HomeViewProtocol {
     private var presenter: HomePresenterProtocol!
     private let disposeBag = DisposeBag()
+    private var coins: [Coin] = []
+    
+    lazy var tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.register(CoinListCell.self, forCellReuseIdentifier: CoinListCell.identifier)
+        return tableView
+    }()
     
     // MARK: - Coin Count label
     lazy var coinsCountLabel: UILabel = {
@@ -180,12 +189,6 @@ class HomeViewController: UIViewController, HomeViewProtocol {
         return ethStack
     }()
     
-    private let mcapChangeLabel = UILabel()
-    private let volumeChangeLabel = UILabel()
-    private let avgChangePercentLabel = UILabel()
-    private let volumeAthLabel = UILabel()
-    private let mcapAthLabel = UILabel()
-    
     lazy var hStackTop: HStack = {
         let stack = HStack(arrangedSubviews: [
             vCoinCountStack,
@@ -208,23 +211,11 @@ class HomeViewController: UIViewController, HomeViewProtocol {
         return stack
     }()
     
-    lazy var verticalStackView: VStack = {
-        let stack = VStack(arrangedSubviews: [
-            mcapChangeLabel,
-            volumeChangeLabel,
-            avgChangePercentLabel,
-            volumeAthLabel,
-            mcapAthLabel
-        ])
-        
-        stack.configure(alignment: .leading, distribution: .fillEqually, spacing: 15)
-        return stack
-    }()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         presenter.loadGlobalData()
+        presenter.loadCoinData()
     }
     
     func showGlobalData(_ data: CryptoGlobalData) {
@@ -235,11 +226,11 @@ class HomeViewController: UIViewController, HomeViewProtocol {
         totalVolumeData.text = NumberFormatter.abbreviatedString(from: data.totalVolume)
         btcDominanceData.text = "\(data.btcDominance) %"
         ethDominanceData.text = "\(data.ethDominance) %"
-        mcapChangeLabel.text = "Market Cap Change: \(data.mcapChange)%"
-        volumeChangeLabel.text = "Volume Change: \(data.volumeChange)%"
-        avgChangePercentLabel.text = "Avg Change Percent: \(data.avgChangePercent)%"
-        volumeAthLabel.text = "Volume ATH: \(data.volumeAth)"
-        mcapAthLabel.text = "Market Cap ATH: \(data.mcapAth)"
+    }
+    
+    func showCoinData(_ coins: [Coin]) {
+        self.coins = coins
+        tableView.reloadData()
     }
     
     func showError(_ message: String) {
@@ -252,22 +243,25 @@ class HomeViewController: UIViewController, HomeViewProtocol {
     private func setupUI() {
         view.addSubview(hStackTop)
         view.addSubview(hStackBottom)
-        view.addSubview(verticalStackView)
+        view.addSubview(tableView)
+        tableView.delegate = self
+        tableView.dataSource = self
         
         NSLayoutConstraint.activate([
-            hStackTop.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
+            hStackTop.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             hStackTop.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             hStackTop.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             
             hStackBottom.topAnchor.constraint(equalTo: hStackTop.bottomAnchor, constant: 20),
             hStackBottom.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             hStackBottom.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            hStackBottom.bottomAnchor.constraint(lessThanOrEqualTo: verticalStackView.topAnchor, constant: -20),
+            hStackBottom.bottomAnchor.constraint(lessThanOrEqualTo: tableView.topAnchor, constant: -20),
             
-            verticalStackView.topAnchor.constraint(equalTo: hStackBottom.bottomAnchor, constant: 20),
-            verticalStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            verticalStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            verticalStackView.bottomAnchor.constraint(lessThanOrEqualTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20)
+            tableView.topAnchor.constraint(equalTo: hStackBottom.bottomAnchor, constant: 20),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20)
+            
         ])
     }
     
@@ -279,4 +273,19 @@ class HomeViewController: UIViewController, HomeViewProtocol {
         presenter.view = view
         return view
     }
+}
+
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return coins.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: CoinListCell.identifier, for: indexPath) as? CoinListCell else {
+                return UITableViewCell()
+            }
+            let coin = coins[indexPath.row]
+            cell.configure(with: coin)
+            return cell
+        }
 }
